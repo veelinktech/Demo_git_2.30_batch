@@ -14,7 +14,11 @@ public class Tutorial20_Taking_Screenshot
 
 	public static void main(String[] args) throws IOException 
 	{
-			
+			new Tutorial20_Taking_Screenshot().m1();	
+		
+	}
+
+	public void m1(){
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://www.fb.com");
@@ -26,9 +30,6 @@ public class Tutorial20_Taking_Screenshot
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		
 		FileHandler.copy(src, new File("C:\\Users\\pc\\Desktop\\Demo\\TS"+System.nanoTime()+".png"));
-		
-		
-		
 	}
 
 }
