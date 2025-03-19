@@ -12,15 +12,27 @@ import org.openqa.selenium.io.FileHandler;
 public class Tutorial20_Taking_Screenshot 
 {
 
-	public static void main(String[] args) throws IOException 
+	@BeforeClass
+	public void setup()
 	{
-			
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://www.google.com");
 		
 		driver.manage().window().maximize();
-		
+	}
+	@AfterClass
+	public void tearDown()
+
+	{
+	driver.close();	
+	}
+
+	@Test
+	public  void m1() throws IOException 
+	{
+			
+	
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		
 		File src = ts.getScreenshotAs(OutputType.FILE);
