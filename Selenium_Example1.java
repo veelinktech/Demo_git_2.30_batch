@@ -17,7 +17,7 @@ public class Tutorial20_Taking_Screenshot
 			
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://www.fb.com");
+		driver.get("https://www.google.com");
 		
 		driver.manage().window().maximize();
 		
