@@ -32,7 +32,7 @@ public class Tutorial20_Taking_Screenshot
 	public  void m1() throws IOException 
 	{
 			
-	
+	        System.out.println();
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		
 		File src = ts.getScreenshotAs(OutputType.FILE);
